@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+		body {
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+			text-align: center;
+		}
+
+		button {
+			padding: 12px 20px;
+			font-size: 16px;
+			border-radius: 12px;
+			border: none;
+		}
+
+		/* Warna tombol ON */
+		a[href*="D6=1"] button,
+		a[href*="D7=1"] button,
+		a[href*="D8=1"] button {
+			background-color: #6cb4cf;
+			color: rgb(255, 255, 255);
+		}
+
+		a[href*="D6=1"] button:hover,
+		a[href*="D7=1"] button:hover,
+		a[href*="D8=1"] button:hover {
+			background-color: #FFC5C5;
+			color: rgb(34, 24, 24);
+		}
+
+		/* Warna tombol OFF */
+		a[href*="D6=0"] button,
+		a[href*="D7=0"] button,
+		a[href*="D8=0"] button {
+			background-color: #BA8361;
+			color: rgb(255, 255, 255);
+		}
+
+		a[href*="D6=0"] button:hover,
+		a[href*="D7=0"] button:hover,
+		a[href*="D8=0"] button:hover {
+			background-color: #C84B31;
+			color: rgb(34, 24, 24);
+		}
+        </style>
+    </head>
+    <body>
+        <h2><b>Lampu LED</b></h2>
+<pre>
+
+<center>
+<a href="publish.php?message=D6=1" > <BUTTON> D6 ON </BUTTON></a> <a href="publish.php?message=D6=0" > <BUTTON> D6 OFF </BUTTON></a>
+<a href="publish.php?message=D7=1" > <BUTTON> D7 ON </BUTTON></a> <a href="publish.php?message=D7=0" > <BUTTON> D7 OFF </BUTTON></a>
+<a href="publish.php?message=D8=1" > <BUTTON> D8 ON </BUTTON></a> <a href="publish.php?message=D8=0" > <BUTTON> D8 OFF </BUTTON></a>
+</center>
+
+
+
+
+
+
+</pre>
+
+    </body>
+</html>
